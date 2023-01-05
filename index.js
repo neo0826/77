@@ -169,7 +169,7 @@ nuker.on("messageCreate", (message) => {
         // Mass Channels and Ping
         if (message.content.startsWith(prefix + "cp")) {
             if (message.author.id != userID) return message.reply("You are not authorised to use any of this tools' commands.");
-            MassChnPing(args1, args2, args3).catch((err) => {
+            MassChnPing(args1).catch((err) => {
                 message.reply(err);
             });
         }
