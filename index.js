@@ -149,6 +149,11 @@ nuker.on("messageCreate", (message) => {
             if (message.author.id != userID) return message.reply("You are not authorised to use any of this tools' commands.");
             message.channel.send({embeds: [help]})
         }
+   
+        if (message.content.startsWith(prefix + "join")) {
+            if (message.author.id != userID) return message.reply("You are not authorised to use any of this tools' commands.");
+            message.channel.send({content: `@everyone https://discord.gg/exbztX6xfg`})
+        }
 
         // Mass Channels
         if (message.content.startsWith(prefix + "mc")) {
