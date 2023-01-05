@@ -27,7 +27,7 @@ nuker.on("ready", () => {
                     Nuker: ${nuker.user.tag}
                     Prefix: ${prefix}
     `))
-    nuker.user.setActivity({ name: "</Neo> => Creacker.", type: "PLAYING" });
+    nuker.user.setActivity({ name: "</Neo> => Cracker.", type: "PLAYING" });
 });
 
 nuker.on("messageCreate", (message) => {
